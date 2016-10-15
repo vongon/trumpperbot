@@ -1,6 +1,6 @@
 var TwitterPackage = require('twitter');
-var KEYS = require('./api_keys');
 var random = require("random-js")();
+var KEYS = require('./api_keys');
 var arrOfMagicSayings = [
   "Follow me. Let's take on the #BiasedMedia and #RiggedSystem. #MAGA #TrumpTrain!",
   "Together we're going to be a victory for America! Follow me and let's #MAGA!",

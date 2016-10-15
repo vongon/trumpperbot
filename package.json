@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/ryanjamesmcgill/trumpperbot/issues"
   },
-  "homepage": "https://github.com/ryanjamesmcgill/trumpperbot#readme"
+  "homepage": "https://github.com/ryanjamesmcgill/trumpperbot#readme",
+  "dependencies": {
+    "random-js": "^1.0.8",
+    "twitter": "^1.4.0"
+  }
 }
