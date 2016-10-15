@@ -2,7 +2,7 @@ var TwitterPackage = require('twitter');
 var random = require("random-js")();
 var KEYS = require('./api_keys');
 var arrOfMagicSayings = [
-  "Click here and RT if you want to send a message to the #BiasedMedia! https://goo.gl/yMQjzZ #TrumpTrain"
+  "Click here and RT if you want to send a message to the #BiasedMedia! https://goo.gl/yMQjzZ #TrumpTrain",
   "Follow my account. Let's take on the #BiasedMedia and this #RiggedSystem. #MAGA #TrumpTrain!",
   "Together we're going to be a victory for America! RT this and spread the word and #MAGA!",
   "It's so important. We can change lives. https://goo.gl/3TXKOa #RiggedSystem #TrumpTrain",
