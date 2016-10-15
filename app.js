@@ -18,8 +18,8 @@ var secret = {
   access_token_key: KEYS.access_token_key,
   access_token_secret: KEYS.access_token_secret
   };
-var TWEET_FREQUENCY_MIN = 10000; //min range of tweet frequency in milliseconds, using range in hopes to humanize the bot and not get banned
-var TWEET_FREQUENCY_MAX = 30000; //max range of tweet frequency in milliseconds, using range in hopes to humanize the bot and not get banned
+var TWEET_FREQUENCY_MIN = 30*1000; //min range of tweet frequency in milliseconds, using range in hopes to humanize the bot and not get banned
+var TWEET_FREQUENCY_MAX = 60*1000; //max range of tweet frequency in milliseconds, using range in hopes to humanize the bot and not get banned
 var LAST_TWEET = {};
 var PENDING_TWEET = {};
 
