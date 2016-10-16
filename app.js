@@ -24,7 +24,8 @@ var arrOfMagicSayings = [
   "I need #TrumpsArmy 2 send a message to the #BiasedMedia. RT and share! https://goo.gl/wIir0Y",
   "#CrookedHillary and 2nd Amendment truth here! RT and share! https://goo.gl/Zn6CSv",
   "#MSM doesn't want this 2 spread! RT this! #TrumpTrain #AmericaFirst #WikiLeaks https://goo.gl/sXVmPT",
-  "You need to read this! #BiasedMedia doesn't want it spread. RT and let's get it out there! https://goo.gl/20VIOc"
+  "You need to read this! #BiasedMedia doesn't want it spread. RT and let's get it out there! https://goo.gl/20VIOc",
+  "#TrumpTrain: the #BiasedMedia doesn't want you to read this https://goo.gl/UpjPn1 #MAGA #WikiLeaks"
 
 ];
 var secret = {
