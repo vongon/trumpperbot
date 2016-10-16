@@ -1,5 +1,5 @@
 # trumpperbot
-An effort in Making America Great Again Again
+Making America Great Again, Again!
 
 ## Usage
 1. `git clone https://github.com/ryanjamesmcgill/trumpperbot.git`
