@@ -23,6 +23,7 @@ var arrOfMagicSayings = [
   "#TrumpTrain: let's send a message to the #BiasedMedia and spread this far and wide: https://goo.gl/wIir0Y",
   "I need #TrumpsArmy 2 send a message to the #BiasedMedia. RT and share! https://goo.gl/wIir0Y",
   "#CrookedHillary and 2nd Amendment truth here! RT and share! https://goo.gl/Zn6CSv",
+  "#MSM doesn't want this 2 spread! RT this! #TrumpTrain #AmericaFirst #WikiLeaks https://goo.gl/sXVmPT",
   "You need to read this! #BiasedMedia doesn't want it spread. RT and let's get it out there! https://goo.gl/20VIOc"
 
 ];
