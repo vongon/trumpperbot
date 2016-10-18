@@ -1,6 +1,7 @@
 var TwitterPackage = require('twitter');
 var random = require("random-js")();
 var KEYS = require('./api_keys');
+//Replace with your own array of magic sayings and factual links:
 var arrOfMagicSayings = [
   "Click here and RT if you want to send a message to the #BiasedMedia! https://goo.gl/yMQjzZ #TrumpTrain",
   "Follow my account. Let's take on the #BiasedMedia and this #RiggedSystem. #MAGA #TrumpTrain!",
@@ -12,16 +13,19 @@ var arrOfMagicSayings = [
   "#WomenForTrump: RT this and get the word out there! https://goo.gl/dQCRmR",
   "I'm counting on you to RT and get this out there https://goo.gl/4utLRA #TrumpTrain",
   "I need everyone on the #TrumpTrain to RT this and get this spread! https://goo.gl/S1gLTe #MAGA",
-  "I'll have a new legacy in months after the world is broken! https://goo.gl/f3qXJF",
-  "I need your help getting this out far and wide! #TrumpTrain #WikiLeaks https://goo.gl/f3qXJF",
-  "My strategy to defeat #ISIS is secret! Click here, RT and spread this! https://goo.gl/f3qXJF",
+  "I'll have a new legacy in months after the world is broken! https://goo.gl/CH2bLk",
+  "I need your help getting this out far and wide! #TrumpTrain #WikiLeaks https://goo.gl/njGE9A",
+  "My strategy to defeat #ISIS is secret! Click here, RT and spread this! https://goo.gl/np4dij",
   "Help me spread truth on #CrookedHillary and 2nd Amendment! RT this! https://goo.gl/Zn6CSv",
   "Lies! Will you get me in Oval Office? RT this and get the word out! https://goo.gl/eiIM0Z",
   "Corrupt #BiasedMedia don't want this 2 spread! Help get it out there! https://goo.gl/xNeVic",
   "#WomenForTrump: #BiasedMedia trying 2 keep this from spreading! RT it and #MAGA! https://goo.gl/dQCRmR",
   "#TrumpTrain: let's send a message to the #BiasedMedia and spread this far and wide: https://goo.gl/wIir0Y",
   "I need #TrumpsArmy 2 send a message to the #BiasedMedia. RT and share! https://goo.gl/wIir0Y",
-  "#CrookedHillary and 2nd Amendment truth here! RT and share! https://goo.gl/Zn6CSv"
+  "#CrookedHillary and 2nd Amendment truth here! RT and share! https://goo.gl/Zn6CSv",
+  "#MSM doesn't want this 2 spread! RT this! #TrumpTrain #AmericaFirst #WikiLeaks https://goo.gl/sXVmPT",
+  "You need to read this! #BiasedMedia doesn't want it spread. RT and let's get it out there! https://goo.gl/20VIOc",
+  "#TrumpTrain: the #BiasedMedia doesn't want you to read this https://goo.gl/UpjPn1 #MAGA #WikiLeaks"
 
 ];
 var secret = {
@@ -30,13 +34,14 @@ var secret = {
   access_token_key: KEYS.access_token_key,
   access_token_secret: KEYS.access_token_secret
   };
-var TWEET_FREQUENCY_MIN = 30*1000; //min range of tweet frequency in milliseconds, using range in hopes to humanize the bot and not get banned
-var TWEET_FREQUENCY_MAX = 60*1000; //max range of tweet frequency in milliseconds, using range in hopes to humanize the bot and not get banned
+var TWEET_FREQUENCY_MIN = 60*1000; //min range of tweet frequency in milliseconds, using range in hopes to humanize the bot and not get banned
+var TWEET_FREQUENCY_MAX = 90*1000; //max range of tweet frequency in milliseconds, using range in hopes to humanize the bot and not get banned
 var LAST_TWEET = {};
 var PENDING_TWEET = {};
 
 var Twitter = new TwitterPackage(secret);
-Twitter.stream('statuses/filter', {track: '#WikiLeaks'}, function(stream) {
+//The entire Twitter.stream function can be duplicated with any hashtag, although your app may throw an error
+Twitter.stream('statuses/filter', {track: '#YOUR-HASHTAG-HERE'}, function(stream) {
   stream.on('data', function(tweet) {
     PENDING_TWEET = tweet;
     console.log('[twitterbot] new tweet streamed!');
